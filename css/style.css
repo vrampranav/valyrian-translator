@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+/* fde74c */
+:root {
+  --primary-color: black;
+  --secondary-color: red;
+  --text-secondary: gray;
+}
+/* content */
+.content {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+/* input-text */
+#input-text,
+.output-area {
+  display: block;
+  width: 70%;
+  height: 10vh;
+  padding-top: 10px;
+  padding-left: 3px;
+  margin: auto;
+  margin-top: 3rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+}
+/* button */
+#btnTranslate,
+#clrBtn {
+  margin-top: 2rem;
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: 120px;
+  background-color: var(--secondary-color);
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.output-area {
+  text-align: left;
+  border: 1px solid black;
+  padding-top: 1px;
+  margin-top: 2rem;
+  color: var(--text-secondary);
+}
+#clrBtn {
+  visibility: hidden;
+}
+/* Error */
+.error-img {
+  max-width: 450px;
+  display: block;
+  margin: 8rem auto;
+}
+.error-msg {
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+}
+.error-msg .invert-color {
+  color: var(--secondary-color);
+}
+#tryBtn {
+  text-decoration: none;
+  background-color: var(--secondary-color);
+  padding: 0.7rem 1rem;
+  border-radius: 0.6rem;
+  color: white;
+  font-weight: bold;
+}
+/* nav */
+.navigation {
+  text-align: center;
+  background-color: var(--primary-color);
+  padding: 1.7rem;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  color: red;
+  position: sticky;
+  top: 0;
+}
+
+footer {
+  background-color: var(--primary-color);
+  padding: 2rem 0;
+  letter-spacing: 3px;
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+/* section */
+.section {
+  padding: 2rem 0;
+  text-align: justify;
+  margin-bottom: 5rem;
+}
+.section p {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  #input-text,
+  .output-area {
+    display: block;
+    width: 80%;
+  }
+  .error-img {
+    max-width: 280px;
+    display: block;
+  }
+  .section p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  #btnTranslate,
+  #clrBtn {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    color: whitesmoke;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: small;
+  }
+}
+@media (max-width: 540px) {
+  .output-area {
+    font-size: medium;
+  }
+  .section p {
+    font-size: medium;
+  }
+}
