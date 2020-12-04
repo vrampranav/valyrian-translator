@@ -1,15 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
+:root {
+  --primary-color: #272932;
+  --secondary-color: #ff2e00;
+  --text-secondary: gray;
+  --text-primary: #f7f7f2;
+}
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
+  /* background-image: linear-gradient(120deg, red, white); */
+  background-color: var(--text-primary);
+  color: var(--primary-color);
 }
-/* fde74c */
-:root {
-  --primary-color: black;
-  --secondary-color: red;
-  --text-secondary: gray;
-}
+
 /* content */
 .content {
   width: 60%;
@@ -39,7 +44,7 @@ body {
   cursor: pointer;
   width: 120px;
   background-color: var(--secondary-color);
-  color: whitesmoke;
+  color: var(--text-primary);
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 1rem;
@@ -49,7 +54,7 @@ body {
   border: 1px solid black;
   padding-top: 1px;
   margin-top: 2rem;
-  color: var(--text-secondary);
+  color: var(--primary-color);
 }
 #clrBtn {
   visibility: hidden;
@@ -72,35 +77,37 @@ body {
   background-color: var(--secondary-color);
   padding: 0.7rem 1rem;
   border-radius: 0.6rem;
-  color: white;
+  color: var(--text-primary);
   font-weight: bold;
 }
 /* nav */
 .navigation {
   text-align: center;
-  background-color: var(--primary-color);
+  background-color: var(--text-primary);
   padding: 1.7rem;
   font-weight: bold;
   font-size: 2rem;
   letter-spacing: 3px;
-  color: red;
+  color: var(--secondary-color);
   position: sticky;
   top: 0;
 }
 
 footer {
-  background-color: var(--primary-color);
+  background-color: var(--text-primary);
   padding: 2rem 0;
   letter-spacing: 3px;
   text-align: center;
-  color: red;
   font-weight: bold;
   position: fixed;
   width: 100%;
   bottom: 0;
+  color: var(--secondary-color);
 }
 /* section */
 .section {
+  width: 80%;
+  margin: auto;
   padding: 2rem 0;
   text-align: justify;
   margin-bottom: 5rem;
@@ -130,7 +137,7 @@ footer {
     height: 80px;
     border-radius: 50%;
     background-color: var(--secondary-color);
-    color: whitesmoke;
+    color: var(--text-primary);
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-size: small;

@@ -28,7 +28,7 @@ btnTrans.addEventListener('click', () => {
             outputText.innerText = jsonResponse.contents.translated;
         })
         .catch(e => catchError(e))
-    outputText.style.color = 'black';
+    outputText.style.color = '#272932';
     clearBtn.style.visibility = 'visible';
 });
 
