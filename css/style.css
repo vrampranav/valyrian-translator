@@ -14,25 +14,45 @@ body {
   background-color: var(--text-primary);
   color: var(--primary-color);
 }
-
-/* content */
+/* errorpage */
 .content {
   width: 60%;
   margin: auto;
   text-align: center;
 }
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* input-text */
 #input-text,
 .output-area {
-  display: block;
-  width: 70%;
-  height: 10vh;
+  height: 15vh;
+  background: none;
   padding-top: 10px;
-  padding-left: 3px;
-  margin: auto;
   margin-top: 3rem;
-  border-radius: 0.5rem;
   font-size: 1.2rem;
+  padding: 10rem 2rem;
+  border: 0;
+}
+#input-text {
+  resize: none;
+  width: 80%;
+  padding-right: 5rem;
+  padding-top: 15rem;
+  text-align: center;
+  margin: auto;
+  outline: none;
+}
+.input-area,
+.output-area {
+  width: 40%;
+}
+
+.btns {
+  padding: 0 3rem;
 }
 /* button */
 #btnTranslate,
@@ -48,11 +68,9 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 1rem;
+  display: block;
 }
 .output-area {
-  text-align: left;
-  border: 1px solid black;
-  padding-top: 1px;
   margin-top: 2rem;
   color: var(--primary-color);
 }
@@ -106,7 +124,7 @@ footer {
 }
 /* section */
 .section {
-  width: 80%;
+  width: 60%;
   margin: auto;
   padding: 2rem 0;
   text-align: justify;
@@ -115,12 +133,15 @@ footer {
 .section p {
   font-size: 1.5rem;
 }
+hr {
+  margin-top: 4rem;
+  width: 80%;
+}
 
 @media (max-width: 800px) {
   #input-text,
   .output-area {
     display: block;
-    width: 80%;
   }
   .error-img {
     max-width: 280px;
@@ -133,14 +154,12 @@ footer {
 @media (max-width: 600px) {
   #btnTranslate,
   #clrBtn {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: var(--secondary-color);
-    color: var(--text-primary);
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
     font-size: small;
+    margin-left: 0.5rem;
+  }
+  #input-text,
+  .output-area {
+    text-align: justify;
   }
 }
 @media (max-width: 540px) {
@@ -149,5 +168,10 @@ footer {
   }
   .section p {
     font-size: medium;
+  }
+  #btnTranslate,
+  #clrBtn {
+    width: 90%;
+    font-size: small;
   }
 }
