@@ -1,22 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap");
 :root {
   --primary-color: #272932;
   --secondary-color: #ff2e00;
   --text-secondary: gray;
   --text-primary: #f7f7f2;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  /* background-image: linear-gradient(120deg, red, white); */
+  font-family: "Cinzel", serif;
   background-color: var(--text-primary);
   color: var(--primary-color);
 }
 /* errorpage */
 .content {
-  width: 60%;
+  width: 80%;
   margin: auto;
   text-align: center;
 }
@@ -24,37 +28,36 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 60vh;
+}
+.col {
+  height: 20rem;
+  width: 20rem;
+}
+.output-area {
+  padding: 0 1rem;
+  padding-top: 9rem;
 }
 
-/* input-text */
-#input-text,
-.output-area {
-  height: 15vh;
-  background: none;
-  padding-top: 10px;
-  margin-top: 3rem;
-  font-size: 1.2rem;
-  padding: 10rem 2rem;
+#output-text {
+  word-wrap: break-word;
+}
+
+#input-text {
+  height: 20rem;
+  padding-top: 9rem;
+  padding-left: 2rem;
+  width: 100%;
   border: 0;
 }
-#input-text {
-  resize: none;
-  width: 80%;
-  padding-right: 5rem;
-  padding-top: 15rem;
-  text-align: center;
-  margin: auto;
-  outline: none;
-}
-.input-area,
-.output-area {
-  width: 40%;
+.btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
 }
 
-.btns {
-  padding: 0 3rem;
-}
-/* button */
 #btnTranslate,
 #clrBtn {
   margin-top: 2rem;
@@ -68,13 +71,9 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 1rem;
-  display: block;
   border: 1px solid var(--secondary-color);
 }
-.output-area {
-  margin-top: 2rem;
-  color: var(--primary-color);
-}
+
 #clrBtn {
   visibility: hidden;
 }
@@ -113,7 +112,7 @@ body {
 }
 
 footer {
-  background-color: var(--text-primary);
+  background-color: black;
   padding: 2rem 0;
   letter-spacing: 3px;
   text-align: center;
@@ -129,50 +128,45 @@ footer {
   margin: auto;
   padding: 2rem 0;
   text-align: justify;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 .section p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 hr {
-  margin-top: 4rem;
-  width: 90%;
+  margin-top: 2rem;
 }
 
-@media (max-width: 800px) {
-  #input-text,
-  .output-area {
-    display: block;
+@media (max-width: 680px) {
+  .row {
+    flex-direction: column;
+    justify-content: center;
   }
-  .error-img {
-    max-width: 280px;
-    display: block;
+  #input-text {
+    height: 10rem;
+    padding: 1rem;
+    width: 100%;
   }
-  .section p {
-    font-size: 1rem;
+  .input-area {
+    height: 10rem;
   }
-}
-@media (max-width: 600px) {
   #btnTranslate,
   #clrBtn {
-    font-size: small;
-    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    width: 110px;
   }
-  #input-text,
   .output-area {
-    text-align: justify;
-  }
-}
-@media (max-width: 540px) {
-  .output-area {
+    padding: 1rem;
     font-size: medium;
+    white-space: initial;
   }
   .section p {
     font-size: medium;
   }
-  #btnTranslate,
-  #clrBtn {
-    width: 90%;
-    font-size: small;
+  .btns {
+    width: 20%;
+    height: 15rem;
   }
 }
