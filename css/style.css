@@ -63,12 +63,13 @@ body {
   border-radius: 0.5rem;
   cursor: pointer;
   width: 120px;
-  background-color: var(--secondary-color);
-  color: var(--text-primary);
+  background-color: var(--text-primary);
+  color: var(--secondary-color);
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 1rem;
   display: block;
+  border: 1px solid var(--secondary-color);
 }
 .output-area {
   margin-top: 2rem;
@@ -128,14 +129,14 @@ footer {
   margin: auto;
   padding: 2rem 0;
   text-align: justify;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 .section p {
   font-size: 1.5rem;
 }
 hr {
   margin-top: 4rem;
-  width: 80%;
+  width: 90%;
 }
 
 @media (max-width: 800px) {
