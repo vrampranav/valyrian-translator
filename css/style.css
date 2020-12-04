@@ -17,6 +17,10 @@ body {
   font-family: "Cinzel", serif;
   background-color: var(--text-primary);
   color: var(--primary-color);
+  background-image: url(/img/dracarys.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 /* errorpage */
 .content {
@@ -37,11 +41,16 @@ body {
 .output-area {
   padding: 0 1rem;
   padding-top: 9rem;
+  background: rgba(255, 255, 255, 0.7);
+  font-weight: bold;
+  color: black;
+  font-size: 1.4rem;
+  border-radius: 0.8rem;
 }
 
-#output-text {
+/* #output-text {
   word-wrap: break-word;
-}
+} */
 
 #input-text {
   height: 20rem;
@@ -49,6 +58,11 @@ body {
   padding-left: 2rem;
   width: 100%;
   border: 0;
+  border-radius: 0.8rem;
+  background-color: white;
+  opacity: 60%;
+  font-weight: bold;
+  font-size: 1.4rem;
 }
 .btns {
   display: flex;
@@ -107,8 +121,7 @@ body {
   font-size: 2rem;
   letter-spacing: 3px;
   color: var(--secondary-color);
-  position: sticky;
-  top: 0;
+  opacity: 70%;
 }
 
 footer {
@@ -117,28 +130,28 @@ footer {
   letter-spacing: 3px;
   text-align: center;
   font-weight: bold;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  color: var(--secondary-color);
+  color: white;
 }
 /* section */
 .section {
-  width: 60%;
+  width: 70%;
   margin: auto;
-  padding: 2rem 0;
+  padding: 2rem 2rem;
   text-align: justify;
   margin-bottom: 5rem;
+  background-color: white;
+  opacity: 60%;
 }
 .section p {
   font-size: 1.2rem;
 }
-hr {
-  margin-top: 2rem;
-}
 
 @media (max-width: 680px) {
+  .section {
+    margin-top: 5rem;
+  }
   .row {
+    margin-top: 4rem;
     flex-direction: column;
     justify-content: center;
   }
