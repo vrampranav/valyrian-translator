@@ -154,9 +154,9 @@ footer {
 }
 
 @media (max-width: 680px) {
-  .section {
+  .content {
     margin-bottom: 6rem;
-    margin-top: 5rem;
+    margin-top: 4rem;
   }
   .row {
     margin-top: 4rem;
