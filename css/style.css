@@ -28,6 +28,7 @@ body:not(.errorpage) {
   margin: auto;
   text-align: center;
 }
+
 .row {
   display: flex;
   justify-content: center;
@@ -98,14 +99,11 @@ body:not(.errorpage) {
 .error-img {
   max-width: 450px;
   display: block;
-  margin: 8rem auto;
+  margin: 5rem auto;
 }
 .error-msg {
   color: var(--text-secondary);
   margin-bottom: 3rem;
-}
-.error-msg .invert-color {
-  color: var(--secondary-color);
 }
 #tryBtn {
   text-decoration: none;
@@ -149,6 +147,7 @@ footer {
   opacity: 70%;
   color: white;
 }
+
 .section p {
   font-size: 1.2rem;
 }
@@ -188,5 +187,17 @@ footer {
   .btns {
     width: 20%;
     height: 15rem;
+  }
+  .navigation {
+    font-size: medium;
+  }
+  .error-img {
+    max-width: 280px;
+    display: block;
+  }
+  .error-msg {
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+    font-size: medium;
   }
 }
