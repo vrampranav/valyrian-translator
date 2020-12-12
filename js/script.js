@@ -36,6 +36,7 @@ btnTrans.addEventListener('click', () => {
         alert("Oops! Please enter some text...");
         return;
     }
+    //validation to check if the input contains digits
     if (!validateUserText(userText)) {
         alert("Input should not contain digits!");
         return;
